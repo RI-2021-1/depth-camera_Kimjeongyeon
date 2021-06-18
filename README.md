@@ -6,7 +6,7 @@
 Gazebo Tutorial에서 제공하는 Kinect sensor를 다운로드한 후, 압축을 해제합니다.
 이후, kinect 폴더를 ```~/.gazebo/models```로 옮깁니다.
 
-Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 바로 뒤에 다음과 같은 SDF markup을 추가하고 저장합니다.
+Kinect의 디렉토리에 있는 ```model.sdf``` 파일을 열어 ```</camera>``` 태그 바로 뒤에 다음과 같은 SDF markup을 추가하고 저장합니다.
 
 ![kinect1](https://user-images.githubusercontent.com/84000076/122526009-cbcd6d00-d054-11eb-894c-3ab5aa959195.png)
 
