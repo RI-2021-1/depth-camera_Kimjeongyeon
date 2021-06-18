@@ -39,4 +39,23 @@ Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 �
   ```
   ![kinect2](https://user-images.githubusercontent.com/84000076/122526046-d7b92f00-d054-11eb-8796-629f2e28cbde.png)
       
-        
+**Gazebo 내 depth camera 설치**
+
+ROS 지원이 활성화 된 상태에서 Gazebo를 실행합니다.
+
+```roslaunch gazebo_ros empty_world.launch```
+
+이후 Insert에서 "Kinect ROS" 모델을 추가하고 카메라 앞에 상자 2개를 추가하였습니다.
+
+![kinect4](https://user-images.githubusercontent.com/84000076/122526670-8493ac00-d055-11eb-9bed-ad7bb430f282.png)
+
+**RViz에서 depth camera 출력 보기**
+
+먼저 RViz를 실행합니다.
+
+```rosrun rviz rviz```
+
+그 다음 Add에서 PointCloud2와 Image를 추가합니다. Image는 <imageTopicName>에서 사용한 값으로 설정해주고, PointCloud2는 <depthImageTopicName>에서 사용한 이름으로 설정해줍니다.
+ 
+![kinect5](https://user-images.githubusercontent.com/84000076/122527634-75f9c480-d056-11eb-8495-c5c349fa7736.png)
+![kinect6](https://user-images.githubusercontent.com/84000076/122527646-7a25e200-d056-11eb-80a4-2ec009858157.png)
