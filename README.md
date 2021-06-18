@@ -7,7 +7,8 @@
 
 Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 바로 뒤에 다음과 같은 SDF markup을 추가합니다.
 
- ```<plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
+ ```
+ <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
           <baseline>0.2</baseline>
           <alwaysOn>true</alwaysOn>
           <!-- Keep this zero, update_rate in the parent <sensor> tag
@@ -32,6 +33,7 @@ Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 �
           <Cy>0</Cy>
           <focalLength>0</focalLength>
           <hackBaseline>0</hackBaseline>
-        </plugin>```
+        </plugin>
+  ```
         
         
