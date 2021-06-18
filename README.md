@@ -39,7 +39,8 @@ Kinect의 디렉토리에 있는 ```model.sdf``` 파일을 열어 ```</camera>``
         </plugin>
   ```
   ![kinect2](https://user-images.githubusercontent.com/84000076/122526046-d7b92f00-d054-11eb-8796-629f2e28cbde.png)
-      
+
+
 **Gazebo 내 depth camera 설치**
 
 ROS 지원이 활성화 된 상태에서 Gazebo를 실행합니다.
