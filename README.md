@@ -5,7 +5,7 @@
 먼저 Gazebo에서 사용할 depth camera를 선택합니다. 저는 Microsoft Kinect를 사용하였습니다. Gazebo 홈페이지에서 제공하는 Kinect sensor를 다운로드한 후, 압축을 해제합니다.
 이후, kinect 폴더를 ```~/.gazebo/models```로 옮깁니다.
 
-Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 바로 뒤에 다음과 같은 SDF markup을 추가합니다.
+Kinect의 디렉토리에 있는 ```model.sdf``` 열어 ```</camera>``` 태그 바로 뒤에 다음과 같은 SDF markup을 추가하고 저장합니다.
 
 ![kinect1](https://user-images.githubusercontent.com/84000076/122526009-cbcd6d00-d054-11eb-894c-3ab5aa959195.png)
 
@@ -59,3 +59,8 @@ ROS 지원이 활성화 된 상태에서 Gazebo를 실행합니다.
  
 ![kinect5](https://user-images.githubusercontent.com/84000076/122527634-75f9c480-d056-11eb-8495-c5c349fa7736.png)
 ![kinect6](https://user-images.githubusercontent.com/84000076/122527646-7a25e200-d056-11eb-80a4-2ec009858157.png)
+
+이후, Rviz에서 일반적인 camera와 depth camera 두 가지 경우를 선택하여 출력을 볼 수 있습니다.
+
+![kinect7](https://user-images.githubusercontent.com/84000076/122528062-e56fb400-d056-11eb-95a6-04fae3692e74.png)
+![kinect8](https://user-images.githubusercontent.com/84000076/122528083-ea346800-d056-11eb-8a10-78dccd0675cd.png)
